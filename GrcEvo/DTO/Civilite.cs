@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace GrcEvo.DTO
 {
-    public class Pays
+    public class Civilite
     {
         public int Id { get; set; }
         public string Nom { get; set; }
         public string Abrv { get; set; }
-        public bool Actif { get; set; }
     }
 }

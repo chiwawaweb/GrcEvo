@@ -29,5 +29,12 @@ namespace GrcEvo.Forms
         }
 
         #endregion
+
+        private void BtnClientNew_Click(object sender, EventArgs e)
+        {
+            /* TEMPORAIRE */
+            ClientEditForm clientEditForm = new ClientEditForm();
+            clientEditForm.ShowDialog();
+        }
     }
 }

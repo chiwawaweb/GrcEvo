@@ -11,7 +11,6 @@ namespace GrcEvo.DTO
         public int Id { get; set; }
         public bool Prospect { get; set; }
         public string Code { get; set; }
-        public string Societe { get; set; }
         public string Civilite { get; set; }
         public string Nom { get; set; }
         public string Prenom { get; set; }
@@ -31,10 +30,10 @@ namespace GrcEvo.DTO
         public string Web { get; set; }
         public DateTime DateNaissance { get; set; }
         public string Remarques { get; set; }
-
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
+        public ICollection<Civilite> Civilites { get; set; }
         public ICollection<Pays> Pays { get; set; }
         public ICollection<ClientCategorie> ClientsCategories { get; set; }
     }

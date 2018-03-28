@@ -16,6 +16,7 @@ namespace GrcEvo.DAL
             Database.SetInitializer<Context>(new ContextInitializer());
         }
 
+        public DbSet<Civilite> Civilites { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<ClientCategorie> ClientsCategories { get; set; }
         public DbSet<Pays> Pays { get; set; }

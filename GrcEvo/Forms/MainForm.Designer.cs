@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.ToolStrip = new System.Windows.Forms.ToolStrip();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.MenuFichier = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,11 +38,15 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BtnClientNew = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ToolStrip
             // 
+            this.ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BtnClientNew});
             this.ToolStrip.Location = new System.Drawing.Point(0, 24);
             this.ToolStrip.Name = "ToolStrip";
             this.ToolStrip.Size = new System.Drawing.Size(1071, 25);
@@ -100,9 +105,18 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
+            // 
+            // BtnClientNew
+            // 
+            this.BtnClientNew.Image = ((System.Drawing.Image)(resources.GetObject("BtnClientNew.Image")));
+            this.BtnClientNew.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnClientNew.Name = "BtnClientNew";
+            this.BtnClientNew.Size = new System.Drawing.Size(83, 22);
+            this.BtnClientNew.Text = "New client";
+            this.BtnClientNew.Click += new System.EventHandler(this.BtnClientNew_Click);
             // 
             // MainForm
             // 
@@ -118,6 +132,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GRC Evo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.ToolStrip.ResumeLayout(false);
+            this.ToolStrip.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -136,5 +152,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton BtnClientNew;
     }
 }
