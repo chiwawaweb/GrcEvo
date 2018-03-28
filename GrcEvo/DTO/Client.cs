@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GrcEvo.DAL
+namespace GrcEvo.DTO
 {
     public class Client
     {
         public int Id { get; set; }
-        // categorie client (societe, particulier, association,...)
-        // type client (client ou prospect)
+        public bool Prospect { get; set; }
         public string Code { get; set; }
         public string Societe { get; set; }
         public string Civilite { get; set; }
@@ -19,7 +18,6 @@ namespace GrcEvo.DAL
         public string Adresse { get; set; }
         public string CodePostal { get; set; }
         public string Ville { get; set; }
-        // pays client
         public string TypeTel1 { get; set; }
         public string PrefTel1 { get; set; }
         public string NumTel1 { get; set; }
@@ -37,5 +35,7 @@ namespace GrcEvo.DAL
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
+        public ICollection<Pays> Pays { get; set; }
+        public ICollection<ClientCategorie> ClientsCategories { get; set; }
     }
 }

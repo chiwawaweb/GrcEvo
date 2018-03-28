@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace GrcEvo.DTO
 {
-    public class Context
+    public class ClientCategorie
     {
-
+        public int Id { get; set; }
+        public string Nom { get; set; }
+        public string Abrv { get; set; }
     }
 }

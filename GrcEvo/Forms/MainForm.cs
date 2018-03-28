@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GrcEvo.DAL;
 
 namespace GrcEvo.Forms
 {
@@ -15,6 +16,9 @@ namespace GrcEvo.Forms
         public MainForm()
         {
             InitializeComponent();
+
+            ClientProvider clientProvider = new ClientProvider();
+            clientProvider.CountAll();
         }
 
         #region Gestion des événements
