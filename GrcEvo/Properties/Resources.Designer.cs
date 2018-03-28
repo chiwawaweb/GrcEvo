@@ -59,15 +59,5 @@ namespace GrcEvo.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
-        /// </summary>
-        internal static byte[] grcevo {
-            get {
-                object obj = ResourceManager.GetObject("grcevo", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

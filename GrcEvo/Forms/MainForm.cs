@@ -16,5 +16,14 @@ namespace GrcEvo.Forms
         {
             InitializeComponent();
         }
+
+        #region Gestion des événements
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        #endregion
     }
 }
