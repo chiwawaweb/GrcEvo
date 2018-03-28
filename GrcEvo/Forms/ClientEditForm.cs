@@ -7,17 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GrcEvo.Controller;
 
 namespace GrcEvo.Forms
 {
     public partial class ClientEditForm : Form
     {
+        public string nomClient;
+
+        //ClientEdit clientEdit = new ClientEdit();
+
         public ClientEditForm()
         {
             InitializeComponent();
+
+            
         }
 
+        
 
+        
+
+        private void Save()
+        {
+            nomClient = TxtNom.Text;
+        }
 
         #region Gestion des événements
 
@@ -27,5 +41,10 @@ namespace GrcEvo.Forms
         }
 
         #endregion
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            Save();
+        }
     }
 }
