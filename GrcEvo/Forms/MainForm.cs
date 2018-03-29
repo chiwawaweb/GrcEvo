@@ -33,8 +33,7 @@ namespace GrcEvo.Forms
         private void BtnClientNew_Click(object sender, EventArgs e)
         {
             /* TEMPORAIRE */
-            ClientEditForm clientEditForm = new ClientEditForm();
-            clientEditForm.ShowDialog();
+            new ClientEditForm().ShowDialog();
         }
     }
 }

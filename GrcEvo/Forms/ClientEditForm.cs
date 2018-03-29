@@ -7,42 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GrcEvo.Controller;
 
 namespace GrcEvo.Forms
 {
     public partial class ClientEditForm : Form
     {
-        public static string nomClient { get; set; }
-
-        
-        
+        // new MailServerSettings().ShowDialog(); // à tester
 
         public ClientEditForm()
         {
-           
 
             InitializeComponent();
 
-            this.comboBox1.Validating += new
-            System.ComponentModel.CancelEventHandler(this.comboBox1_Validating);
+            //this.comboBox1.Validating += new CancelEventHandler(this.comboBox1_Validating);
 
-            errorProvider1.SetError(TxtNom, "erreur 1");
-            errorProvider1.SetError(textBox1, "erreur 2");
         }
 
         private void Save()
         {
-            nomClient = TxtNom.Text;
-            ClientEdit clientEdit = new ClientEdit();
-            clientEdit.SaveData();
 
-        }
-
-        public void AfficheErreurs()
-        {
-            //ClientEdit clientEdit = new ClientEdit();
-            //MessageBox.Show(erreurs.ToString());
         }
 
         #region Gestion des événements
@@ -61,19 +44,17 @@ namespace GrcEvo.Forms
 
 
 
-        private void comboBox1_Validating(object sender, CancelEventArgs e)
+        
+        private void TxtNom_Validating(object sender, CancelEventArgs e)
         {
-            try
+            if (TxtNom.Text.Length<2)
             {
-                int x = Int32.Parse(comboBox1.Text);
-                errorProvider1.SetError(comboBox1, "");
+                errorProvider1.SetError(TxtNom, "Nom incorrect");
             }
-            catch (Exception ex)
+            else
             {
-                errorProvider1.SetError(comboBox1, "Texte trop court");
+                errorProvider1.SetError(TxtNom, string.Empty);
             }
         }
-
-       
     }
 }
