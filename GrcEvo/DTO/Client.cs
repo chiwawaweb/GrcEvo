@@ -11,9 +11,7 @@ namespace GrcEvo.DTO
         public int Id { get; set; }
         public bool Prospect { get; set; }
         public string Code { get; set; }
-        public string Civilite { get; set; }
         public string Nom { get; set; }
-        public string Prenom { get; set; }
         public string Adresse { get; set; }
         public string CodePostal { get; set; }
         public string Ville { get; set; }
@@ -30,6 +28,7 @@ namespace GrcEvo.DTO
         public string Web { get; set; }
         public DateTime DateNaissance { get; set; }
         public string Remarques { get; set; }
+        public bool Bloque { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
