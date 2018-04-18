@@ -73,6 +73,12 @@
     <Compile Include="Forms\ClientEditForm.Designer.cs">
       <DependentUpon>ClientEditForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ModeleConsoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModeleConsoleForm.Designer.cs">
+      <DependentUpon>ModeleConsoleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModeleConsoleForm.resx">
+      <DependentUpon>ModeleConsoleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
