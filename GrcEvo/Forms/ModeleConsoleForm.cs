@@ -17,9 +17,9 @@ namespace GrcEvo.Forms
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void BtnF1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

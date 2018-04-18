@@ -17,7 +17,7 @@ namespace GrcEvo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.ModeleConsoleForm());
+            Application.Run(new Forms.MainForm());
         }
     }
 }

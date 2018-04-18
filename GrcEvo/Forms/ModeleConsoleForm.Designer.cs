@@ -70,7 +70,6 @@
             this.label63 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -97,8 +96,6 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
@@ -490,7 +487,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(91, 23);
             this.textBox1.TabIndex = 71;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // BtnF1
             // 
@@ -505,6 +501,7 @@
             this.BtnF1.Text = "[F1]";
             this.BtnF1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnF1.UseVisualStyleBackColor = false;
+            this.BtnF1.Click += new System.EventHandler(this.BtnF1_Click);
             // 
             // label63
             // 
@@ -519,9 +516,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(23, 918);
+            this.button1.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.button1.Location = new System.Drawing.Point(4, 861);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 27);
+            this.button1.Size = new System.Drawing.Size(116, 27);
             this.button1.TabIndex = 91;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -534,15 +532,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(267, 85);
             this.textBox2.TabIndex = 92;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(137, 918);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 38);
-            this.groupBox1.TabIndex = 93;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // label5
             // 
@@ -804,26 +793,6 @@
             this.label74.TabIndex = 106;
             this.label74.Text = "║";
             // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(0, 880);
-            this.label64.Margin = new System.Windows.Forms.Padding(0);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(20, 22);
-            this.label64.TabIndex = 131;
-            this.label64.Text = "║";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(0, 858);
-            this.label65.Margin = new System.Windows.Forms.Padding(0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(20, 22);
-            this.label65.TabIndex = 130;
-            this.label65.Text = "║";
-            // 
             // label66
             // 
             this.label66.AutoSize = true;
@@ -929,9 +898,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1208, 958);
-            this.Controls.Add(this.label64);
-            this.Controls.Add(this.label65);
+            this.ClientSize = new System.Drawing.Size(1208, 896);
             this.Controls.Add(this.label66);
             this.Controls.Add(this.label67);
             this.Controls.Add(this.label68);
@@ -968,7 +935,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label63);
@@ -1017,7 +983,6 @@
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1120, 992);
             this.Name = "ModeleConsoleForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1070,7 +1035,6 @@
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -1097,8 +1061,6 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
